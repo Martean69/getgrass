@@ -9,6 +9,7 @@ import shutil
 from loguru import logger
 from websockets_proxy import Proxy, proxy_connect
 from fake_useragent import UserAgent
+from colorama import init, Fore, Back, Style
 import pyfiglet
 from colorama import Fore
 
@@ -18,14 +19,14 @@ print(Fore.YELLOW + text)
 def print_banner():
     banner = f"""
 {Fore.CYAN}{Style.BRIGHT}╔══════════════════════════════════════════════╗
-║              Jukut grass AutoBot             ║
+║          BlockMesh Network AutoBot           ║
 ║     Github: https://github.com/Martean69     ║
 ║        Kena sybill resiko anda wkwkwk        ║
 ╚══════════════════════════════════════════════╝
 """
     print(banner)
 
-    print(banner)
+
 async def connect_to_wss(socks5_proxy, user_id):
     user_agent = UserAgent(os=['windows', 'macos', 'linux'], browsers='chrome')
     random_user_agent = user_agent.random

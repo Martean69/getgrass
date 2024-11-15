@@ -12,11 +12,10 @@ from fake_useragent import UserAgent
 import pyfiglet
 from colorama import Fore
 
-init(autoreset=True)
 text = pyfiglet.figlet_format("Martin Si Hacker Sunda Awkokw")
 print(Fore.YELLOW + text)
 def print_banner():
-    banner = f"""
+banner = f"""
 {Fore.CYAN}{Style.BRIGHT}
 ╔══════════════════════════════════════════════╗
 ║              Jukut Grass AutoBot             ║
@@ -25,7 +24,7 @@ def print_banner():
 ╚══════════════════════════════════════════════╝
 """
     print(banner)
-
+init(autoreset=True)
 async def connect_to_wss(socks5_proxy, user_id):
     user_agent = UserAgent(os=['windows', 'macos', 'linux'], browsers='chrome')
     random_user_agent = user_agent.random

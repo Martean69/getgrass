@@ -17,8 +17,9 @@ text = pyfiglet.figlet_format("Martin Si Hacker Sunda Awkokw")
 print(Fore.YELLOW + text)
 def print_banner():
     banner = f"""
-{Fore.CYAN}{Style.BRIGHT}╔══════════════════════════════════════════════╗
-║          BlockMesh Network AutoBot           ║
+{Fore.CYAN}{Style.BRIGHT}
+╔══════════════════════════════════════════════╗
+║              Jukut Grass AutoBot             ║
 ║     Github: https://github.com/Martean69     ║
 ║        Kena sybill resiko anda wkwkwk        ║
 ╚══════════════════════════════════════════════╝
